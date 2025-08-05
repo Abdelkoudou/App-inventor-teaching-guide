@@ -11,7 +11,7 @@ A comprehensive 30-session yearly program designed to teach kids aged 12-18 app 
 - **Duration**: 30 sessions (1 hour each)
 - **Target Age**: 12-18 years old
 - **Prerequisites**: No programming background required
-- **Tools**: MIT App Inventor, ESP32, Arduino IDE
+- **Tools**: MIT App Inventor, ESP32, PictoBlox
 - **Format**: Hands-on, project-based learning
 - **Competition**: "App of the Month" starting from Session 12
 
@@ -72,11 +72,13 @@ Starting from Session 12, students will participate in monthly app development c
 - Android device or emulator
 - ESP32 development board
 - Basic electronic components (LEDs, sensors, etc.)
+- PictoBlox software installed
 
 ### For Instructor:
 - Projector or large display
 - Additional ESP32 boards for demonstrations
 - Various sensors and actuators for examples
+- PictoBlox software for demonstrations
 
 ---
 

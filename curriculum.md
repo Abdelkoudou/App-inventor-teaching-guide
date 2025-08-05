@@ -144,7 +144,7 @@
 #### Activities:
 - **IoT concept introduction** (15 min): What is Internet of Things?
 - **ESP32 hardware overview** (20 min): Components and capabilities
-- **Setting up Arduino IDE** (20 min): Installation and configuration
+- **Setting up PictoBlox** (20 min): Installation and configuration
 - **First ESP32 program** (5 min): Blinking LED
 
 #### Learning Outcomes:
@@ -156,7 +156,7 @@
 #### Materials Needed:
 - ESP32 development boards
 - USB cables
-- Arduino IDE
+- PictoBlox software
 - LEDs and resistors
 
 ---
@@ -259,49 +259,49 @@
 
 ---
 
-### Session 12: ESP32 WiFi and Web Server Basics
+### Session 12: ESP32 Serial Communication Basics
 **Duration**: 1 hour  
-**Objective**: Make ESP32 connect to WiFi and serve web pages
+**Objective**: Make ESP32 communicate with computers via USB
 
 #### Activities:
-- **WiFi setup** (20 min): Connecting ESP32 to WiFi
-- **Web server basics** (25 min): Creating simple web pages
-- **Project: WiFi LED Controller** (10 min): Control LED via web
-- **Security considerations** (5 min): Basic security practices
+- **Serial communication** (20 min): Understanding USB communication
+- **Basic commands** (25 min): Sending and receiving data
+- **Project: USB LED Controller** (10 min): Control LED via serial
+- **Safety considerations** (5 min): Basic electrical safety
 
 #### Learning Outcomes:
-- Connect ESP32 to WiFi networks
-- Create web servers on ESP32
-- Control hardware via web interface
-- Understand basic IoT security
+- Connect ESP32 to computer via USB
+- Send and receive data via serial communication
+- Control hardware via USB interface
+- Understand basic electrical safety
 
 #### Materials Needed:
 - ESP32 development boards
-- WiFi network access
+- USB cables
 - LEDs and resistors
-- Web server examples
+- Serial communication examples
 
 ---
 
 ### Session 13: App Inventor + ESP32 Communication
 **Duration**: 1 hour  
-**Objective**: Connect mobile apps to ESP32 via WiFi
+**Objective**: Connect mobile apps to ESP32 via USB
 
 #### Activities:
-- **Communication protocols** (15 min): HTTP, WebSocket basics
-- **ESP32 web API** (20 min): Creating API endpoints
-- **App Inventor HTTP requests** (20 min): Sending/receiving data
-- **Project: Remote Sensor Monitor** (5 min): Display sensor data in app
+- **Communication protocols** (15 min): Serial communication basics
+- **ESP32 serial API** (20 min): Creating simple commands
+- **App Inventor serial requests** (20 min): Sending/receiving data
+- **Project: USB Sensor Monitor** (5 min): Display sensor data in app
 
 #### Learning Outcomes:
-- Understand client-server communication
-- Create ESP32 web APIs
-- Send HTTP requests from apps
+- Understand serial communication
+- Create ESP32 serial commands
+- Send serial requests from apps
 - Display ESP32 data in mobile apps
 
 #### Materials Needed:
 - ESP32 development boards
-- WiFi network
+- USB cables
 - Computer with internet access
 - Sensor data examples
 
@@ -432,51 +432,51 @@
 
 ---
 
-### Session 19: ESP32 Camera Integration
+### Session 19: Advanced Sensor Projects
 **Duration**: 1 hour  
-**Objective**: Use ESP32 camera module with mobile apps
+**Objective**: Use multiple sensors with ESP32
 
 #### Activities:
-- **ESP32-CAM overview** (15 min): Camera module features
-- **Camera setup** (25 min): Wiring and programming
-- **App integration** (15 min): Display camera feed in app
-- **Project: Security Camera** (5 min): Motion detection app
+- **Sensor combination** (15 min): Using multiple sensors together
+- **Data processing** (25 min): Combining sensor readings
+- **App integration** (15 min): Display multiple sensors in app
+- **Project: Weather Station** (5 min): Temperature and humidity app
 
 #### Learning Outcomes:
-- Set up ESP32 camera module
-- Stream video to mobile apps
-- Implement motion detection
-- Create security applications
+- Connect multiple sensors to ESP32
+- Process combined sensor data
+- Display multiple readings in apps
+- Create environmental monitoring apps
 
 #### Materials Needed:
-- ESP32-CAM modules
-- Camera mounting hardware
-- WiFi network
-- Video streaming examples
+- ESP32 development boards
+- Multiple sensors (temperature, humidity, light, etc.)
+- Breadboards and jumper wires
+- Sensor combination examples
 
 ---
 
-### Session 20: Voice Control and Speech Recognition
+### Session 20: Sound and Music Projects
 **Duration**: 1 hour  
-**Objective**: Add voice control to apps and ESP32
+**Objective**: Add sound and music to apps and ESP32
 
 #### Activities:
-- **Speech recognition** (20 min): Using speech-to-text
-- **Voice commands** (20 min): Controlling apps with voice
-- **ESP32 voice control** (15 min): Voice commands to hardware
-- **Project: Voice Assistant** (5 min): Basic voice-controlled app
+- **Sound components** (20 min): Using sound and music in apps
+- **Buzzer control** (20 min): Making sounds with ESP32
+- **Music creation** (15 min): Creating simple melodies
+- **Project: Music Maker** (5 min): Basic music creation app
 
 #### Learning Outcomes:
-- Implement speech recognition
-- Create voice-controlled interfaces
-- Control hardware with voice
-- Design accessible applications
+- Add sound effects to apps
+- Control buzzer with ESP32
+- Create simple melodies
+- Design musical applications
 
 #### Materials Needed:
 - Computer with internet access
-- Microphone hardware
-- Speech recognition examples
-- Voice control templates
+- ESP32 development boards
+- Buzzer or speaker
+- Music creation examples
 
 ---
 
@@ -504,51 +504,51 @@
 
 ---
 
-### Session 22: Bluetooth Communication
+### Session 22: Color and Light Projects
 **Duration**: 1 hour  
-**Objective**: Use Bluetooth for app-ESP32 communication
+**Objective**: Use RGB LEDs and light sensors with ESP32
 
 #### Activities:
-- **Bluetooth basics** (15 min): How Bluetooth works
-- **ESP32 Bluetooth** (25 min): Setting up Bluetooth server
-- **App Bluetooth client** (15 min): Connecting from app
-- **Project: Bluetooth LED Controller** (5 min): Wireless control
+- **RGB LED basics** (15 min): How RGB LEDs work
+- **Color control** (25 min): Changing colors with ESP32
+- **Light sensors** (15 min): Detecting light levels
+- **Project: Color Mixer** (5 min): RGB color control app
 
 #### Learning Outcomes:
-- Understand Bluetooth communication
-- Set up ESP32 Bluetooth server
-- Connect apps via Bluetooth
-- Create wireless control systems
+- Control RGB LED colors
+- Read light sensor data
+- Create color mixing apps
+- Design light-responsive applications
 
 #### Materials Needed:
 - ESP32 development boards
-- Bluetooth-enabled devices
-- LEDs and resistors
-- Bluetooth examples
+- RGB LED
+- Light sensor
+- Color mixing examples
 
 ---
 
-### Session 23: Cloud Integration and Remote Access
+### Session 23: Motion and Movement Projects
 **Duration**: 1 hour  
-**Objective**: Connect apps and ESP32 to cloud services
+**Objective**: Use motion sensors and motors with ESP32
 
 #### Activities:
-- **Cloud services** (15 min): Firebase, AWS, etc.
-- **ESP32 cloud connection** (25 min): Sending data to cloud
-- **App cloud integration** (15 min): Reading cloud data
-- **Project: Cloud Weather Station** (5 min): Remote monitoring
+- **Motion sensors** (15 min): PIR and accelerometer sensors
+- **Motor control** (25 min): Controlling servo and DC motors
+- **Movement detection** (15 min): Detecting motion and movement
+- **Project: Motion Detector** (5 min): Motion sensing app
 
 #### Learning Outcomes:
-- Understand cloud services
-- Connect ESP32 to cloud
-- Access cloud data from apps
-- Create remote monitoring systems
+- Use motion detection sensors
+- Control motors with ESP32
+- Detect movement and gestures
+- Create motion-responsive applications
 
 #### Materials Needed:
 - ESP32 development boards
-- Internet connection
-- Cloud service accounts
-- Cloud integration examples
+- PIR motion sensor
+- Servo motor
+- Motion detection examples
 
 ---
 
