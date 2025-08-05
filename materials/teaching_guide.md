@@ -136,8 +136,8 @@ This program is designed to be student-centered, hands-on, and encouraging. The 
 
 #### Digital Setup
 - **App Inventor Accounts**: Pre-created accounts for students
-- **Arduino IDE**: Installed on all computers
-- **WiFi Access**: Reliable internet connection
+- **PictoBlox**: Installed on all computers
+- **USB Cables**: For ESP32 connections
 - **Backup Materials**: Offline resources in case of connectivity issues
 
 ---
@@ -185,7 +185,7 @@ This program is designed to be student-centered, hands-on, and encouraging. The 
 #### Session 7: ESP32 Introduction
 - **IoT Discussion**: Explain why IoT matters
 - **Hardware Show-and-Tell**: Let students examine ESP32 boards
-- **Setup Support**: Help with Arduino IDE installation
+- **Setup Support**: Help with PictoBlox installation
 - **First Blink**: Celebrate the first LED blink
 
 #### Session 8: ESP32 Basics
@@ -203,10 +203,10 @@ This program is designed to be student-centered, hands-on, and encouraging. The 
 - **Collaboration**: Encourage students to work together
 
 #### ESP32 Integration
-- **Network Setup**: Help with WiFi configuration
+- **USB Setup**: Help with ESP32 USB connections
 - **Communication Demo**: Show app-ESP32 communication
 - **Error Handling**: Teach debugging techniques
-- **Security Basics**: Discuss IoT security
+- **Safety Basics**: Discuss electrical safety
 
 ### Phase 3: Advanced Projects (Sessions 17-24)
 
@@ -250,9 +250,9 @@ This program is designed to be student-centered, hands-on, and encouraging. The 
 
 #### ESP32 Problems
 - **Connection Issues**: Check USB cables and drivers
-- **Upload Problems**: Help with Arduino IDE setup
+- **Upload Problems**: Help with PictoBlox setup
 - **Hardware Issues**: Have spare components available
-- **Network Issues**: Help with WiFi configuration
+- **Communication Issues**: Help with serial communication
 
 ### Learning Issues
 

@@ -35,16 +35,13 @@ Create a mobile app that can control an LED connected to an ESP32 microcontrolle
 
 ### ESP32 Programming
 
-#### Step 1: Arduino IDE Setup
-1. Open Arduino IDE
-2. Go to File → Preferences
-3. Add this URL to Additional Board Manager URLs:
-   ```
-   https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
-   ```
-4. Go to Tools → Board → Boards Manager
-5. Search for "ESP32" and install the board package
-6. Select "ESP32 Dev Module" from Tools → Board
+#### Step 1: PictoBlox Setup
+1. Open PictoBlox
+2. Go to Settings → Board → ESP32
+3. Select your ESP32 board type
+4. Connect ESP32 via USB cable
+5. Verify connection in PictoBlox
+6. Test basic communication
 
 #### Step 2: ESP32 Code
 ```cpp
@@ -114,7 +111,7 @@ void handleLedStatus() {
 
 #### Step 3: Upload Code
 1. Connect ESP32 to computer via USB
-2. Select the correct COM port in Arduino IDE
+2. Select the correct port in PictoBlox
 3. Click Upload button
 4. Open Serial Monitor to see the IP address
 5. Note the IP address for the mobile app
