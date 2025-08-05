@@ -1,4 +1,4 @@
-# 🚀 App Inventor & ESP32 Youth Development Program
+# App Inventor & ESP32 Youth Development Program
 ## "Code Creators: From Ideas to Interactive Apps"
 
 ### Program Overview
@@ -6,7 +6,7 @@ A comprehensive 30-session yearly program designed to teach kids aged 12-18 app 
 
 ---
 
-## 📋 Program Details
+## Program Details
 
 - **Duration**: 30 sessions (1 hour each)
 - **Target Age**: 12-18 years old
@@ -17,7 +17,7 @@ A comprehensive 30-session yearly program designed to teach kids aged 12-18 app 
 
 ---
 
-## 🎯 Learning Objectives
+## Learning Objectives
 
 By the end of this program, students will be able to:
 - Design and develop mobile applications using MIT App Inventor
@@ -29,7 +29,7 @@ By the end of this program, students will be able to:
 
 ---
 
-## 📚 Curriculum Structure
+## Curriculum Structure
 
 ### Phase 1: Foundation (Sessions 1-8)
 **Focus**: Introduction to programming concepts and MIT App Inventor basics
@@ -45,7 +45,7 @@ By the end of this program, students will be able to:
 
 ---
 
-## 🏆 App of the Month Competition
+## App of the Month Competition
 
 Starting from Session 12, students will participate in monthly app development competitions:
 - **Theme-based challenges**
@@ -55,17 +55,7 @@ Starting from Session 12, students will participate in monthly app development c
 
 ---
 
-## 📁 Program Files
-
-- `curriculum.md` - Detailed session-by-session curriculum
-- `materials/` - Teaching materials and resources
-- `projects/` - Sample projects and templates
-- `assessment.md` - Evaluation criteria and rubrics
-- `competition_guidelines.md` - Competition rules and guidelines
-
----
-
-## 🛠️ Required Equipment
+## Required Equipment
 
 ### For Each Student:
 - Computer with internet access
@@ -80,16 +70,7 @@ Starting from Session 12, students will participate in monthly app development c
 
 ---
 
-## 📖 Documentation Format
-
-This program is available in multiple formats:
-- **Markdown** (this README and curriculum files)
-- **Word Document** (formatted for printing)
-- **LaTeX** (for academic/professional use)
-
----
-
-## 🎓 Success Metrics
+## Success Metrics
 
 - 100% of students complete at least 5 working apps
 - 80% participate in App of the Month competitions
