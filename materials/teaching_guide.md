@@ -203,8 +203,8 @@ This program is designed to be student-centered, hands-on, and encouraging. The 
 - **Collaboration**: Encourage students to work together
 
 #### ESP32 Integration
-- **USB Setup**: Help with ESP32 USB connections
-- **Communication Demo**: Show app-ESP32 communication
+- **Bluetooth Setup**: Help with ESP32 Bluetooth connections
+- **Communication Demo**: Show app-ESP32 Bluetooth communication
 - **Error Handling**: Teach debugging techniques
 - **Safety Basics**: Discuss electrical safety
 
@@ -252,7 +252,7 @@ This program is designed to be student-centered, hands-on, and encouraging. The 
 - **Connection Issues**: Check USB cables and drivers
 - **Upload Problems**: Help with PictoBlox setup
 - **Hardware Issues**: Have spare components available
-- **Communication Issues**: Help with serial communication
+- **Bluetooth Issues**: Help with Bluetooth pairing and communication
 
 ### Learning Issues
 

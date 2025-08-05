@@ -54,41 +54,31 @@ Design and build a smart home application that controls at least one ESP32 devic
 
 ### Technical Requirements
 
-#### ESP32 Setup
-```cpp
-// Basic ESP32 code structure
-#include <WiFi.h>
+#### ESP32 Setup (PictoBlox Blocks)
+```
+When ESP32 Starts Up:
+  Initialize Bluetooth as "SmartHome"
+  Set Digital Pin 2 as OUTPUT
 
-const int devicePin = 2; // Your device pin
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(devicePin, OUTPUT);
-}
-
-void loop() {
-  if (Serial.available()) {
-    String command = Serial.readString();
-    processCommand(command);
-  }
-}
-
-void processCommand(String command) {
-  if (command == "ON") {
-    digitalWrite(devicePin, HIGH);
-    Serial.println("Device ON");
-  } else if (command == "OFF") {
-    digitalWrite(devicePin, LOW);
-    Serial.println("Device OFF");
-  }
-}
+Forever:
+  If Bluetooth Message Received:
+    If message = "ON":
+      Set Digital Pin 2 to HIGH
+      Send "Device turned ON" via Bluetooth
+    If message = "OFF":
+      Set Digital Pin 2 to LOW
+      Send "Device turned OFF" via Bluetooth
+    If message = "STATUS":
+      If Digital Pin 2 is HIGH:
+        Send "Device is ON" via Bluetooth
+      Else:
+        Send "Device is OFF" via Bluetooth
 ```
 
 #### App Inventor Components
 - **Buttons** for different controls
 - **Labels** for status display
-- **Text Box** for entering commands
-- **Web** component for communication
+- **BluetoothClient** for Bluetooth communication
 - **Images** for visual appeal
 
 ### Design Guidelines

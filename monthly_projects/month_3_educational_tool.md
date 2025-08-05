@@ -54,43 +54,27 @@ Create an interactive educational application that helps people learn something 
 
 ### Technical Requirements
 
-#### ESP32 Setup
-```cpp
-// Basic educational app structure
-#include <WiFi.h>
+#### ESP32 Setup (PictoBlox Blocks)
+```
+When ESP32 Starts Up:
+  Initialize Bluetooth as "EduTool"
+  Set Digital Pin 2 as OUTPUT
+  Set variable score to 0
 
-const int feedbackPin = 2; // LED or buzzer for feedback
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(feedbackPin, OUTPUT);
-}
-
-void loop() {
-  if (Serial.available()) {
-    String command = Serial.readString();
-    processEducationalCommand(command);
-  }
-}
-
-void processEducationalCommand(String command) {
-  if (command == "CORRECT") {
-    // Positive feedback
-    digitalWrite(feedbackPin, HIGH);
-    delay(500);
-    digitalWrite(feedbackPin, LOW);
-    Serial.println("Great job!");
-  } else if (command == "INCORRECT") {
-    // Negative feedback
-    for(int i = 0; i < 3; i++) {
-      digitalWrite(feedbackPin, HIGH);
-      delay(100);
-      digitalWrite(feedbackPin, LOW);
-      delay(100);
-    }
-    Serial.println("Try again!");
-  }
-}
+Forever:
+  If Bluetooth Message Received:
+    If message = "CORRECT":
+      Set Digital Pin 2 to HIGH
+      Wait 0.5 seconds
+      Set Digital Pin 2 to LOW
+      Send "Great job!" via Bluetooth
+    If message = "INCORRECT":
+      Repeat 3 times:
+        Set Digital Pin 2 to HIGH
+        Wait 0.1 seconds
+        Set Digital Pin 2 to LOW
+        Wait 0.1 seconds
+      Send "Try again!" via Bluetooth
 ```
 
 #### App Inventor Components

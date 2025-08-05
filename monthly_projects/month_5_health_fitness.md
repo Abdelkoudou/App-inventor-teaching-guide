@@ -54,31 +54,23 @@ Create an application that helps people with health and fitness goals. Your app 
 
 ### Technical Requirements
 
-#### ESP32 Setup
-```cpp
-// Basic health tracking structure
-#include <WiFi.h>
+#### ESP32 Setup (PictoBlox Blocks)
+```
+When ESP32 Starts Up:
+  Initialize Bluetooth as "HealthTracker"
+  Set Digital Pin 2 as INPUT
+  Set Digital Pin 3 as OUTPUT
+  Set variable stepCount to 0
 
-const int sensorPin = 2; // Motion sensor or other health sensor
-const int ledPin = 3;    // Status indicator
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(sensorPin, INPUT);
-  pinMode(ledPin, OUTPUT);
-}
-
-void loop() {
-  int sensorValue = analogRead(sensorPin);
-  // Process health data
-  processHealthData(sensorValue);
-  delay(1000);
-}
-
-void processHealthData(int value) {
-  // Convert sensor data to health metrics
-  Serial.println("HEALTH:" + String(value));
-}
+Forever:
+  Read Analog Pin 2
+  If value > threshold:
+    Change stepCount by 1
+    Set Digital Pin 3 to HIGH
+    Wait 0.1 seconds
+    Set Digital Pin 3 to LOW
+    Send "Steps: " and stepCount via Bluetooth
+  Wait 1 second
 ```
 
 #### App Inventor Components

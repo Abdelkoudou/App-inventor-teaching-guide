@@ -54,41 +54,23 @@ Design and build an entertaining application that provides fun and engaging expe
 
 ### Technical Requirements
 
-#### ESP32 Setup
-```cpp
-// Basic entertainment app structure
-#include <WiFi.h>
+#### ESP32 Setup (PictoBlox Blocks)
+```
+When ESP32 Starts Up:
+  Initialize Bluetooth as "Entertainment"
+  Set Digital Pin 2 as OUTPUT
+  Set Digital Pin 3 as OUTPUT
 
-const int ledPin = 2;
-const int buzzerPin = 3;
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(ledPin, OUTPUT);
-  pinMode(buzzerPin, OUTPUT);
-}
-
-void loop() {
-  if (Serial.available()) {
-    String command = Serial.readString();
-    processEntertainmentCommand(command);
-  }
-}
-
-void processEntertainmentCommand(String command) {
-  if (command == "PLAY_SOUND") {
-    // Play a sound
-    tone(buzzerPin, 440, 500); // A note
-  } else if (command == "LIGHT_SHOW") {
-    // Create light pattern
-    for(int i = 0; i < 5; i++) {
-      digitalWrite(ledPin, HIGH);
-      delay(200);
-      digitalWrite(ledPin, LOW);
-      delay(200);
-    }
-  }
-}
+Forever:
+  If Bluetooth Message Received:
+    If message = "PLAY_SOUND":
+      Play Tone on Pin 3, frequency 440, duration 0.5 seconds
+    If message = "LIGHT_SHOW":
+      Repeat 5 times:
+        Set Digital Pin 2 to HIGH
+        Wait 0.2 seconds
+        Set Digital Pin 2 to LOW
+        Wait 0.2 seconds
 ```
 
 #### App Inventor Components

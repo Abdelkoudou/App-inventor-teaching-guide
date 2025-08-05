@@ -161,6 +161,30 @@
 
 ---
 
+### Session 7.5: PictoBlox Blocks for ESP32 Programming
+**Duration**: 1 hour  
+**Objective**: Master PictoBlox blocks for ESP32 programming
+
+#### Activities:
+- **PictoBlox interface tour** (15 min): Understanding the block-based environment
+- **ESP32 blocks exploration** (25 min): Digital output, analog input, Bluetooth blocks
+- **Block programming practice** (15 min): Creating simple ESP32 programs
+- **Common blocks demonstration** (5 min): Most used blocks for ESP32
+
+#### Learning Outcomes:
+- Navigate PictoBlox interface confidently
+- Use ESP32-specific blocks effectively
+- Create block-based ESP32 programs
+- Understand block programming concepts
+
+#### Materials Needed:
+- Computer with PictoBlox installed
+- ESP32 development boards
+- Projector for demonstrations
+- Block programming examples
+
+---
+
 ### Session 8: ESP32 Basics and First Project
 **Duration**: 1 hour  
 **Objective**: Program ESP32 and understand basic electronics
@@ -259,49 +283,49 @@
 
 ---
 
-### Session 12: ESP32 Serial Communication Basics
+### Session 12: ESP32 Bluetooth Basics
 **Duration**: 1 hour  
-**Objective**: Make ESP32 communicate with computers via USB
+**Objective**: Make ESP32 communicate via Bluetooth
 
 #### Activities:
-- **Serial communication** (20 min): Understanding USB communication
-- **Basic commands** (25 min): Sending and receiving data
-- **Project: USB LED Controller** (10 min): Control LED via serial
+- **Bluetooth communication** (20 min): Understanding Bluetooth technology
+- **ESP32 Bluetooth setup** (25 min): Configuring Bluetooth in PictoBlox
+- **Project: Bluetooth LED Controller** (10 min): Control LED via Bluetooth
 - **Safety considerations** (5 min): Basic electrical safety
 
 #### Learning Outcomes:
-- Connect ESP32 to computer via USB
-- Send and receive data via serial communication
-- Control hardware via USB interface
+- Connect ESP32 to devices via Bluetooth
+- Send and receive data via Bluetooth communication
+- Control hardware via Bluetooth interface
 - Understand basic electrical safety
 
 #### Materials Needed:
-- ESP32 development boards
-- USB cables
+- ESP32 development boards with Bluetooth
+- Bluetooth-enabled devices
 - LEDs and resistors
-- Serial communication examples
+- Bluetooth communication examples
 
 ---
 
-### Session 13: App Inventor + ESP32 Communication
+### Session 13: App Inventor + ESP32 Bluetooth Communication
 **Duration**: 1 hour  
-**Objective**: Connect mobile apps to ESP32 via USB
+**Objective**: Connect mobile apps to ESP32 via Bluetooth
 
 #### Activities:
-- **Communication protocols** (15 min): Serial communication basics
-- **ESP32 serial API** (20 min): Creating simple commands
-- **App Inventor serial requests** (20 min): Sending/receiving data
-- **Project: USB Sensor Monitor** (5 min): Display sensor data in app
+- **Bluetooth communication** (15 min): Understanding Bluetooth protocols
+- **ESP32 Bluetooth API** (20 min): Creating Bluetooth commands
+- **App Inventor Bluetooth requests** (20 min): Sending/receiving data
+- **Project: Bluetooth Sensor Monitor** (5 min): Display sensor data in app
 
 #### Learning Outcomes:
-- Understand serial communication
-- Create ESP32 serial commands
-- Send serial requests from apps
+- Understand Bluetooth communication
+- Create ESP32 Bluetooth commands
+- Send Bluetooth requests from apps
 - Display ESP32 data in mobile apps
 
 #### Materials Needed:
-- ESP32 development boards
-- USB cables
+- ESP32 development boards with Bluetooth
+- Bluetooth-enabled devices
 - Computer with internet access
 - Sensor data examples
 
@@ -671,6 +695,30 @@
 - Android devices for demos
 - Voting forms
 - Feedback sheets
+
+---
+
+### Session 29: Month 1 Showcase and Celebration
+**Duration**: 1 hour  
+**Objective**: Celebrate achievements and showcase best apps
+
+#### Activities:
+- **Winner announcement** (10 min): Announce competition winners
+- **Best app demonstrations** (30 min): Showcase top 3 apps
+- **Award ceremony** (15 min): Present certificates and recognition
+- **Feedback and improvement** (5 min): Discuss improvements for next month
+
+#### Learning Outcomes:
+- Celebrate student achievements
+- Learn from successful projects
+- Receive recognition for hard work
+- Plan improvements for future competitions
+
+#### Materials Needed:
+- Projector or large display
+- Competition certificates
+- Winner showcase materials
+- Feedback collection forms
 
 ---
 

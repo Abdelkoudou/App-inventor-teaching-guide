@@ -54,23 +54,17 @@ Create an application that uses sensors to monitor environmental conditions and 
 
 ### Technical Requirements
 
-#### ESP32 Setup
-```cpp
-// Basic sensor reading code structure
-#include <WiFi.h>
+#### ESP32 Setup (PictoBlox Blocks)
+```
+When ESP32 Starts Up:
+  Initialize Bluetooth as "EnvMonitor"
+  Set sensor pin as INPUT
 
-const int sensorPin = 2; // Your sensor pin
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(sensorPin, INPUT);
-}
-
-void loop() {
-  int sensorValue = analogRead(sensorPin);
-  Serial.println("SENSOR:" + String(sensorValue));
-  delay(1000); // Read every second
-}
+Forever:
+  Read Analog Pin 32
+  Map value to temperature (0-4095 to 0-50)
+  Send "Temperature: " and temperature via Bluetooth
+  Wait 10 seconds
 ```
 
 #### App Inventor Components

@@ -54,39 +54,21 @@ Design and build an application that serves your community by solving real probl
 
 ### Technical Requirements
 
-#### ESP32 Setup
-```cpp
-// Basic community app structure
-#include <WiFi.h>
+#### ESP32 Setup (PictoBlox Blocks)
+```
+When ESP32 Starts Up:
+  Initialize Bluetooth as "CommunityHelper"
+  Set Digital Pin 2 as OUTPUT
+  Set Digital Pin 3 as INPUT
 
-const int statusPin = 2; // Status indicator for community alerts
-const int sensorPin = 3; // Sensor for community monitoring
-
-void setup() {
-  Serial.begin(115200);
-  pinMode(statusPin, OUTPUT);
-  pinMode(sensorPin, INPUT);
-}
-
-void loop() {
-  // Monitor community needs
-  int sensorValue = analogRead(sensorPin);
-  processCommunityData(sensorValue);
-  delay(5000); // Check every 5 seconds
-}
-
-void processCommunityData(int value) {
-  // Process community-related data
-  Serial.println("COMMUNITY:" + String(value));
-  
-  // Example: Alert system for community issues
-  if (value > 100) {
-    digitalWrite(statusPin, HIGH); // Alert indicator
-    Serial.println("ALERT: Community attention needed");
-  } else {
-    digitalWrite(statusPin, LOW);
-  }
-}
+Forever:
+  Read Analog Pin 3
+  If value > 100:
+    Set Digital Pin 2 to HIGH
+    Send "ALERT: Community attention needed" via Bluetooth
+  Else:
+    Set Digital Pin 2 to LOW
+  Wait 5 seconds
 ```
 
 #### App Inventor Components
