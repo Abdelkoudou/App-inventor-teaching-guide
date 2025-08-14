@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚀 Code Creators - App Inventor for Kids!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-emoji">🚀</span>
+                <span class="logo-text">Code Creators</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">🏠 Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#curriculum" class="nav-link">📚 Learn</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">🎯 Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resources" class="nav-link">🛠️ Resources</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        🌟 Build Amazing Apps with 
+                        <span class="highlight">App Inventor!</span>
+                    </h1>
+                    <p class="hero-description">
+                        Join our exciting journey to learn app development and electronics! 
+                        Create awesome apps that connect to real gadgets and devices. 
+                        No experience needed - just bring your creativity! 🎨✨
+                    </p>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">30</div>
+                            <div class="stat-label">Fun Sessions</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Cool Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">12-18</div>
+                            <div class="stat-label">Ages</div>
+                        </div>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn-primary" onclick="scrollToSection('curriculum')">
+                            🚀 Start Learning
+                        </button>
+                        <button class="btn-secondary" onclick="scrollToSection('projects')">
+                            🎯 View Projects
+                        </button>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-demo">
+                                <div class="app-header">My First App! 🎉</div>
+                                <div class="app-buttons">
+                                    <div class="app-btn">🔴 Red Light</div>
+                                    <div class="app-btn">🟢 Green Light</div>
+                                    <div class="app-btn">🔵 Blue Light</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="floating-icons">
+                        <div class="icon" style="--delay: 0s">📱</div>
+                        <div class="icon" style="--delay: 1s">💡</div>
+                        <div class="icon" style="--delay: 2s">🤖</div>
+                        <div class="icon" style="--delay: 3s">⚡</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- What You'll Learn Section -->
+        <section class="learning-section">
+            <div class="container">
+                <h2 class="section-title">🎯 What You'll Learn</h2>
+                <div class="learning-grid">
+                    <div class="learning-card">
+                        <div class="card-icon">📱</div>
+                        <h3>Build Mobile Apps</h3>
+                        <p>Create your own mobile apps using drag-and-drop programming with MIT App Inventor</p>
+                    </div>
+                    <div class="learning-card">
+                        <div class="card-icon">🤖</div>
+                        <h3>Control Electronics</h3>
+                        <p>Learn to control LEDs, sensors, and other cool gadgets with ESP32 microcontrollers</p>
+                    </div>
+                    <div class="learning-card">
+                        <div class="card-icon">🔗</div>
+                        <h3>Connect Everything</h3>
+                        <p>Make your apps talk to real-world devices using Bluetooth and wireless connections</p>
+                    </div>
+                    <div class="learning-card">
+                        <div class="card-icon">🏆</div>
+                        <h3>Win Competitions</h3>
+                        <p>Show off your creations in monthly app contests and build an awesome portfolio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Program Phases Section -->
+        <section class="phases-section">
+            <div class="container">
+                <h2 class="section-title">🗺️ Your Learning Journey</h2>
+                <div class="phases-timeline">
+                    <div class="phase-card">
+                        <div class="phase-number">1</div>
+                        <div class="phase-content">
+                            <h3>🌱 Foundation</h3>
+                            <p>Sessions 1-8</p>
+                            <p>Get started with programming basics and create your first apps!</p>
+                        </div>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">2</div>
+                        <div class="phase-content">
+                            <h3>🚀 Core Development</h3>
+                            <p>Sessions 9-16</p>
+                            <p>Build advanced apps and start controlling electronics!</p>
+                        </div>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">3</div>
+                        <div class="phase-content">
+                            <h3>⭐ Advanced Projects</h3>
+                            <p>Sessions 17-24</p>
+                            <p>Create complex apps and IoT projects that wow everyone!</p>
+                        </div>
+                    </div>
+                    <div class="phase-card">
+                        <div class="phase-number">4</div>
+                        <div class="phase-content">
+                            <h3>🏆 Competition & Innovation</h3>
+                            <p>Sessions 25-30</p>
+                            <p>Compete in challenges and showcase your amazing creations!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Curriculum Section -->
+        <section id="curriculum" class="curriculum-section">
+            <div class="container">
+                <h2 class="section-title">📚 Learning Sessions</h2>
+                <p class="section-subtitle">Discover what you'll build in each exciting session!</p>
+                
+                <div class="curriculum-tabs">
+                    <button class="tab-button active" data-phase="1">🌱 Foundation</button>
+                    <button class="tab-button" data-phase="2">🚀 Core Development</button>
+                    <button class="tab-button" data-phase="3">⭐ Advanced Projects</button>
+                    <button class="tab-button" data-phase="4">🏆 Competition</button>
+                </div>
+
+                <div class="curriculum-content">
+                    <div class="phase-content active" data-phase="1">
+                        <div class="phase-header">
+                            <h3>🌱 Phase 1: Foundation (Sessions 1-8)</h3>
+                            <p>Get started with programming basics and create your first apps!</p>
+                        </div>
+                        <div class="sessions-grid">
+                            <div class="session-card">
+                                <div class="session-number">1</div>
+                                <h4>Welcome to App Development! 🎉</h4>
+                                <p>Create your first "Hello World" app and explore MIT App Inventor</p>
+                                <div class="session-tags">
+                                    <span class="tag">Basics</span>
+                                    <span class="tag">Setup</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">2</div>
+                                <h4>Button Magic! 🔘</h4>
+                                <p>Make buttons that talk, change colors, and respond to your touch</p>
+                                <div class="session-tags">
+                                    <span class="tag">UI</span>
+                                    <span class="tag">Events</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">3</div>
+                                <h4>Smart Calculator 🧮</h4>
+                                <p>Build a calculator that can solve math problems</p>
+                                <div class="session-tags">
+                                    <span class="tag">Math</span>
+                                    <span class="tag">Logic</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">4</div>
+                                <h4>Memory Game 🧠</h4>
+                                <p>Create a fun memory game to challenge your friends</p>
+                                <div class="session-tags">
+                                    <span class="tag">Games</span>
+                                    <span class="tag">Arrays</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-content" data-phase="2">
+                        <div class="phase-header">
+                            <h3>🚀 Phase 2: Core Development (Sessions 9-16)</h3>
+                            <p>Build advanced apps and start controlling electronics!</p>
+                        </div>
+                        <div class="sessions-grid">
+                            <div class="session-card">
+                                <div class="session-number">9</div>
+                                <h4>Meet Your ESP32! 🤖</h4>
+                                <p>Control your first LED and make it blink with your phone</p>
+                                <div class="session-tags">
+                                    <span class="tag">Hardware</span>
+                                    <span class="tag">Bluetooth</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">12</div>
+                                <h4>Smart Home Simulator 🏠</h4>
+                                <p>Control lights, fans, and sensors like a real smart home</p>
+                                <div class="session-tags">
+                                    <span class="tag">IoT</span>
+                                    <span class="tag">Sensors</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">15</div>
+                                <h4>Beautiful App Design 🎨</h4>
+                                <p>Make your apps look amazing with colors, fonts, and layouts</p>
+                                <div class="session-tags">
+                                    <span class="tag">Design</span>
+                                    <span class="tag">UI/UX</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">16</div>
+                                <h4>First Competition Prep! 🏁</h4>
+                                <p>Get ready for your first App of the Month challenge</p>
+                                <div class="session-tags">
+                                    <span class="tag">Competition</span>
+                                    <span class="tag">Portfolio</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-content" data-phase="3">
+                        <div class="phase-header">
+                            <h3>⭐ Phase 3: Advanced Projects (Sessions 17-24)</h3>
+                            <p>Create complex apps and IoT projects that wow everyone!</p>
+                        </div>
+                        <div class="sessions-grid">
+                            <div class="session-card">
+                                <div class="session-number">17</div>
+                                <h4>Weather Station 🌤️</h4>
+                                <p>Build a weather monitoring system with real sensors</p>
+                                <div class="session-tags">
+                                    <span class="tag">Sensors</span>
+                                    <span class="tag">Data</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">20</div>
+                                <h4>AI Voice Assistant 🗣️</h4>
+                                <p>Create your own voice-controlled smart assistant</p>
+                                <div class="session-tags">
+                                    <span class="tag">AI</span>
+                                    <span class="tag">Voice</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">23</div>
+                                <h4>Robot Controller 🤖</h4>
+                                <p>Build an app to control a robot with sensors and motors</p>
+                                <div class="session-tags">
+                                    <span class="tag">Robotics</span>
+                                    <span class="tag">Control</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">24</div>
+                                <h4>Data Visualization 📊</h4>
+                                <p>Create beautiful charts and graphs from sensor data</p>
+                                <div class="session-tags">
+                                    <span class="tag">Charts</span>
+                                    <span class="tag">Analytics</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="phase-content" data-phase="4">
+                        <div class="phase-header">
+                            <h3>🏆 Phase 4: Competition & Innovation (Sessions 25-30)</h3>
+                            <p>Compete in challenges and showcase your amazing creations!</p>
+                        </div>
+                        <div class="sessions-grid">
+                            <div class="session-card">
+                                <div class="session-number">25</div>
+                                <h4>Final Project Planning 📋</h4>
+                                <p>Plan your ultimate app that combines everything you've learned</p>
+                                <div class="session-tags">
+                                    <span class="tag">Planning</span>
+                                    <span class="tag">Design</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">28</div>
+                                <h4>Demo Day Preparation 🎬</h4>
+                                <p>Get ready to showcase your amazing projects to everyone</p>
+                                <div class="session-tags">
+                                    <span class="tag">Presentation</span>
+                                    <span class="tag">Demo</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">29</div>
+                                <h4>Build Your Portfolio 📂</h4>
+                                <p>Create a professional portfolio of all your apps</p>
+                                <div class="session-tags">
+                                    <span class="tag">Portfolio</span>
+                                    <span class="tag">Documentation</span>
+                                </div>
+                            </div>
+                            <div class="session-card">
+                                <div class="session-number">30</div>
+                                <h4>Graduation Celebration! 🎓</h4>
+                                <p>Celebrate your journey from beginner to app developer!</p>
+                                <div class="session-tags">
+                                    <span class="tag">Celebration</span>
+                                    <span class="tag">Achievement</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">🎯 Monthly Challenges</h2>
+                <p class="section-subtitle">Show off your skills with these awesome monthly projects!</p>
+                
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-icon">🏠</div>
+                        <div class="project-month">Month 1</div>
+                        <h3>Smart Home App</h3>
+                        <p>Build an app to control lights, temperature, and security in your dream smart home!</p>
+                        <div class="project-features">
+                            <span class="feature">💡 LED Control</span>
+                            <span class="feature">🌡️ Temperature</span>
+                            <span class="feature">🔒 Security</span>
+                        </div>
+                        <button class="project-btn">Learn More</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🌍</div>
+                        <div class="project-month">Month 2</div>
+                        <h3>Environment Monitor</h3>
+                        <p>Create an app that monitors air quality, noise, and weather to protect our planet!</p>
+                        <div class="project-features">
+                            <span class="feature">🌬️ Air Quality</span>
+                            <span class="feature">📊 Data Charts</span>
+                            <span class="feature">⚠️ Alerts</span>
+                        </div>
+                        <button class="project-btn">Learn More</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🎓</div>
+                        <div class="project-month">Month 3</div>
+                        <h3>Educational Tool</h3>
+                        <p>Design a fun learning app that helps other kids master math, science, or languages!</p>
+                        <div class="project-features">
+                            <span class="feature">🧮 Quizzes</span>
+                            <span class="feature">🎮 Games</span>
+                            <span class="feature">📈 Progress</span>
+                        </div>
+                        <button class="project-btn">Learn More</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🎮</div>
+                        <div class="project-month">Month 4</div>
+                        <h3>Entertainment App</h3>
+                        <p>Create the next big entertainment app with games, music, or interactive stories!</p>
+                        <div class="project-features">
+                            <span class="feature">🎵 Music</span>
+                            <span class="feature">🕹️ Games</span>
+                            <span class="feature">🎨 Creative</span>
+                        </div>
+                        <button class="project-btn">Learn More</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">💪</div>
+                        <div class="project-month">Month 5</div>
+                        <h3>Health & Fitness</h3>
+                        <p>Build an app that helps people stay healthy with fitness tracking and wellness tips!</p>
+                        <div class="project-features">
+                            <span class="feature">👟 Step Counter</span>
+                            <span class="feature">💓 Heart Rate</span>
+                            <span class="feature">🥗 Nutrition</span>
+                        </div>
+                        <button class="project-btn">Learn More</button>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-icon">🤝</div>
+                        <div class="project-month">Month 6</div>
+                        <h3>Community Helper</h3>
+                        <p>Make an app that solves real problems in your community and helps your neighbors!</p>
+                        <div class="project-features">
+                            <span class="feature">🆘 Emergency</span>
+                            <span class="feature">📍 Location</span>
+                            <span class="feature">👥 Social</span>
+                        </div>
+                        <button class="project-btn">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="resources-section">
+            <div class="container">
+                <h2 class="section-title">🛠️ Helpful Resources</h2>
+                <p class="section-subtitle">Everything you need to become an amazing app developer!</p>
+                
+                <div class="resources-grid">
+                    <div class="resource-category">
+                        <div class="category-header">
+                            <div class="category-icon">👨‍🎓</div>
+                            <h3>For Students</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">📱 MIT App Inventor Tutorials</a></li>
+                            <li><a href="#">🤖 ESP32 Programming Guide</a></li>
+                            <li><a href="#">⚡ Electronics Basics</a></li>
+                            <li><a href="#">💡 Programming Concepts</a></li>
+                            <li><a href="#">🎨 UI Design Tips</a></li>
+                            <li><a href="#">🔧 Troubleshooting Help</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-category">
+                        <div class="category-header">
+                            <div class="category-icon">👩‍🏫</div>
+                            <h3>For Teachers</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="#">📋 Teaching Strategies</a></li>
+                            <li><a href="#">📊 Assessment Rubrics</a></li>
+                            <li><a href="#">🛠️ Setup Instructions</a></li>
+                            <li><a href="#">🏆 Competition Guidelines</a></li>
+                            <li><a href="#">📚 Lesson Plans</a></li>
+                            <li><a href="#">🎯 Learning Objectives</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="resource-category">
+                        <div class="category-header">
+                            <div class="category-icon">🔧</div>
+                            <h3>Tools & Software</h3>
+                        </div>
+                        <ul class="resource-list">
+                            <li><a href="https://appinventor.mit.edu" target="_blank">🚀 MIT App Inventor</a></li>
+                            <li><a href="#" target="_blank">🤖 PictoBlox Software</a></li>
+                            <li><a href="#" target="_blank">📱 Android Emulator</a></li>
+                            <li><a href="#" target="_blank">🔗 Bluetooth Connection Guide</a></li>
+                            <li><a href="#" target="_blank">📋 Component Reference</a></li>
+                            <li><a href="#" target="_blank">💻 Code Templates</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="getting-started">
+                    <h3>🚀 Ready to Get Started?</h3>
+                    <p>Join thousands of young developers who are already building amazing apps!</p>
+                    <div class="start-buttons">
+                        <button class="btn-primary">📞 Contact Your Teacher</button>
+                        <button class="btn-secondary">📥 Download Materials</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>🌟 Made with ❤️ for young developers ready to change the world! 🌟</p>
+            <p>App Inventor & ESP32 Youth Development Program</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
